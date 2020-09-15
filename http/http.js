@@ -14,3 +14,5 @@ exports.addTest = function peticion(personaje) {
             console.log(error)
         })
 }
+
+module.exports = peticion;
