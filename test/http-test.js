@@ -1,13 +1,18 @@
-var chai = require('chai');
-var assert = chai.assert;
-var should = chai.should();
-var http = require('../http/http');
+// Initial
+const expect = require('chai').expect;
 
-describe('Testing asset function: ', function() {
-    describe('Check AddTest Function', function() {
-        it('Check the returned value using : assert.equal(value,value): ', function() {
-            result = http.addTest('Cell');
-            assert.equal(result, true);
-        })
-    })
-})
+// Testing App
+const http = require('../http/http');
+
+describe('Request API DragonBall', () => {
+    it('Get all the characters', () => {
+        http.peticion("Cell")
+            .then(response => {
+                // Json Object
+
+                // console.log(response);
+                expect(typeof response).to.equal('object');
+
+            });
+    });
+});
