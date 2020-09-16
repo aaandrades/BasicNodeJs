@@ -28,8 +28,12 @@ let peticion = (personaje) => {
         })
 }
 
+<<<<<<< HEAD
 
 module.exports = {
     peticion,
     // peticionTest
 }
+=======
+module.exports = peticion;
+>>>>>>> 71c79bd40805a45a845a608c9487bb70b9bca278
